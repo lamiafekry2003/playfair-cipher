@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playfair Cipher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-stone-200">
+    <div class=" flex justify-center items-center flex-col gap-5 mt-32">
+        <h1 class=" text-6xl text-stone-500 mb-6">Playfair Cipher</h1>
+
+       <div class="bg-stone-500 px-6 py-8 rounded shadow-lg">
+        <div class="mb-6 ">
+            <label for="key" class="text-stone-200 mx-2 text-2xl">KEY</label>
+            <input type="text" id="key" placeholder="Enter Key Please" class=" text-stone-500 outline-0 px-10 py-3 rounded-full shadow-md focus:border-2 focus:border-stone-700">
+        </div>
+        <!-- <br> -->
+
+        <div class="mb-6 ">
+            <label for="text" class="text-stone-200 mx-2 text-2xl">Text</label>
+            <input type="text" id="text" placeholder='Enter text'  class="text-stone-500 outline-0 px-10 py-3 rounded-full shadow-md focus:border-2 focus:border-stone-700">
+        </div>
+        <button class="cli bg-stone-200 rounded-full py-2 text-stone-500 px-10 ">encryption</button>
+
+        <h2 id="result" class="text-stone-200 text-3xl text-left mt-6 "> </h2>
+       </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
